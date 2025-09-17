@@ -1,0 +1,322 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=IM+Fell+English+SC&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Lustria&family=Manrope:wght@200..800&family=Maven+Pro:wght@400..900&family=MedievalSharp&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:wght@490&family=Orbitron:wght@400..900&family=Pixelify+Sans&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!--  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cedarville+Cursive&family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IM+Fell+English+SC&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Just+Another+Hand&family=Lora:ital,wght@0,400..700;1,400..700&family=Lustria&family=Manrope:wght@200..800&family=Maven+Pro:wght@400..900&family=MedievalSharp&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:wght@490&family=Orbitron:wght@400..900&family=Pixelify+Sans&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!--  -->
+    <script src="https://kit.fontawesome.com/aa35bd379c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="./scripts/script.js" defer type="module"></script>
+    <title>Nicolas Lavarde - Portfolio</title>
+</head>
+<body>
+    <div class="global-container">
+        <!-- dark/light switch -->
+          <span class="dark-light-mode-container">
+            <label>
+                <span class="interruptor">
+                <input type="checkbox" name="dark-light" id="dark-light-mode">
+                </span>
+            </label>
+        </span>  
+         <!-- implementing light or dark mode based on the user's past choice -->
+    <script>
+        let light = window.localStorage.getItem("lightOn");
+        if(light === "true") {
+            document.getElementById("dark-light-mode").checked = true;
+            document.querySelector(".interruptor").classList.add("reverse");
+        } else {
+            document.getElementById("dark-light-mode").checked = false;
+        };
+    </script>
+        <!-- aside -->
+        <aside class="aside-content">
+            <figure class="profile-pic-container">
+                <img src="./assets/profile_pic.jpg" alt="profile picture of Nicolas Lavarde"  >
+                <figcaption>Available for work</figcaption>
+            </figure>
+            <ul class="table-of-content">
+                <li><a href="#who-am-I-anchor">Who am I ?</a></li>
+                <li><a href="#skills-anchor">Skills</a></li>
+                <li><a href="#about-me-anchor">My story</a></li>
+                <li><a href="#why-hire-me-anchor">What can I bring</a></li>
+                <li><a href="#projects-anchor">My projects</a></li>
+                <li><a href="#collab-anchor">Let's collaborate</a></li>
+            </ul>
+            <ul class="important-links">
+                <li><a href="https://www.linkedin.com/in/nicolas-lavarde-68999837b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/lava_rde/?hl=fr" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://github.com/ThreeFrogs511/" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+            </ul>
+        </aside>
+
+    <!--  -->
+
+        <main class="main-content" >
+            <section  class="who-am-I-section">
+            <h1 id="who-am-I-anchor">Hi, I'm Nicolas.</h1>
+                <h3>Full-stack dev from France.</h3>
+                <p>Passionate about crafting clean user experiences and building complex, scalable systems.</p> <br>
+                <p>I love turning ideas into intuitive interfaces and robust applications, combining creativity with technical precision.</p> <br>
+                <p>As a junior developer, I’m still at the beginning of my journey in code — but I thrive on learning by doing. I enjoy experimenting, building projects, and solving problems step by step. For me, every challenge is an opportunity to grow my skills and become a stronger developer.</p><br>
+                <p>If you wish to know more about my journey, just scroll down !</p>
+            </section>
+            <section class="skills-section">
+                <h2 id="skills-anchor" >My skills</h2>
+                <h3>As of August 2025, here are my main areas of expertise :</h3>
+                <div class="grid-skills">
+                    <div class="front-end-column">
+                        <span>
+                            <i class="fa-solid fa-code"></i>
+                        </span>
+                        <h3>Front-end</h3>
+                        <ol>
+                            <li>HTML5 <span class="stars-container html5"></span></li>
+                            <li>CSS <span class="stars-container css"></span></li>
+                            <li>Javascript <span class="stars-container js"></span></li>
+                        </ol>
+                    </div>
+                    <div class="back-end-column">
+                        <span>
+                            <i class="fa-solid fa-gear"></i>
+                        </span>
+                        <h3>Back-end</h3>
+                        <ol>
+                            <li>PHP <span class="stars-container php"></span></li>
+                            <li>SQL <span class="stars-container sql"></span></li>
+                            <li>Javascript <span class="stars-container js2"></span></li>
+                        </ol>
+                    </div>
+                    <div class="framework-column">
+                        <span>
+                            <i class="fa-solid fa-toolbox"></i>
+                        </span>
+                        <h3>Framework</h3>
+                        <ol>
+                            <li>React <span class="stars-container react"></span></li>
+                            <li>Bootstrap <span class="stars-container boot"></span></li>
+                        </ol>
+                    </div>
+                </div>
+
+            </section>
+            <!--  -->
+            <section class="my-story">
+                <h2 id="about-me-anchor">My story</h2>
+                <h3>A curious mind, a methodical coder, and a creator at heart.</h3>
+                <div class="arrows-carousel">
+                    <i class="fa-solid fa-arrow-left arrow-forbidden"></i>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div class="carousel-story">
+                    <div class="carousel-track">
+                        <figure class="vign1" >
+                            <div class="img-container"><img src="./assets/vign1.webp" alt="a kid dreaming about cinema"></div>
+                            <figcaption> 
+                                Like many love stories, mine began elsewhere — with cinema. 
+                                As a kid, I loved writing stories. Dreaming was a way to express myself despite my 
+                                stutter. Fresh from high school, I decided to pursue this calling. A leap of faith.
+                            </figcaption>
+                        </figure>
+                        <figure class="vign2" >
+                            <div class="img-container"><img src="./assets/vign2.webp" alt="a young man leaving cinema"></div>
+                            <figcaption> 
+                               I studied film with passion, chasing the dream of becoming the next great director. But behind the glamour, I discovered a world of compromises, harsh realities, and limits that suffocated my creativity.
+                               With a heavy heart, I knew I had to let go.
+                            </figcaption>
+                        </figure>
+                        <figure class="vign3" >
+                            <div class="img-container"><img src="./assets/vign3.webp" alt="a young man discovering coding"></div>
+                            <figcaption> 
+                                After a period of doubt and searching, I rediscovered programming through a simple HTML and 
+                                CSS tutorial. The spark was immediate. I remembered the joy of making small games and blogs as 
+                                a child. This time, it felt like coming home.
+                            </figcaption>
+                        </figure>
+                        <figure class="vign4" >
+                            <div class="img-container"><img src="./assets/vign4.webp" alt="a young man showing a picture of a chow chow"></div>
+                            <figcaption> 
+                                  Since then, well, let's just say that I’ve been hooked. From my first disastrous but beloved site about chow chows 
+                            to learning PHP, SQL, JavaScript, and now React, coding has become more than a skill — 
+                            it’s my way to create, explore, and push boundaries.
+                            </figcaption>
+                        </figure>
+                        <figure class="vign5" >
+                            <div class="img-container"><img src="./assets/vign5.webp" alt="a young man displaying some line of codes to an audience"></div>
+                            <figcaption> 
+                                Today, I’m fully committed to web development, eager to collaborate, and ready to turn ideas into interactive, meaningful projects. For me, coding is more than writing lines of text — 
+                                it’s about shaping experiences, solving problems, and a 
+                                chance to bring imagination into reality.                            
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            <!--  -->
+             <section class="why-hire-me">
+                <h2 id="why-hire-me-anchor">What can I bring</h2>
+                <h3>Why hire me ? Down below is a list of all the cool things I'll bring to your project.</h3>
+                <ul>
+                    <li><h4><i class="fa-solid fa-circle-check"></i> Modern websites  </h4> Clean, responsive, and user-friendly websites built with HTML, CSS, and JavaScript.</li>
+                    <li><h4><i class="fa-solid fa-circle-check"></i> Interactive projects</i></h4> Creative features and dynamic interfaces to make ideas come alive.</li>
+                    <li><h4><i class="fa-solid fa-circle-check"></i> Solid foundations</h4> Well-structured code, attention to detail, and a methodical approach to problem-solving.</li>
+                    <li><h4><i class="fa-solid fa-circle-check"></i> Continuous growth</h4> Currently expanding my skills with React and eager to adapt to new technologies when needed.</li>
+                    <li><h4><i class="fa-solid fa-circle-check"></i> Collaboration</h4> Reliable and proactive team player, able to communicate clearly and work towards shared goals.</li>
+                </ul>
+            </section>
+            <!--  -->
+            <section class="projects-section">
+                <h2 id="projects-anchor">My projects (so far)</h2>
+                <h3>Click on the thumbnails to see more.</h3>
+                <div class="grid-projects">
+                    <figure class="pj1">
+                        <a href="https://github.com/ThreeFrogs511/questmaker" target="_blank"><img src="/assets/questmaker_thumbnail.webp" alt="thumbnail of the questmaker website project"></a>
+                        <div class="see-more-container">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </div>
+                    </figure>
+                    <figure class="pj2">
+                        <a href="https://github.com/ThreeFrogs511/memochamp" target="_blank"><img src="/assets/memochamp_thumbnail.webp" alt="thumbnail of the memochamp website project"></a>
+                        <div class="see-more-container">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </div>
+                    </figure>
+                    <figure class="pj3">
+                        <a href="https://github.com/ThreeFrogs511/Fluide" target="_blank"><img src="/assets/fluide_thumbnail.webp" alt="thumbnail of the Fluide&Libre website project"></a>
+                        <div class="see-more-container">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </div>
+                    </figure>
+                </div>
+            </section>
+           
+            <section class="collab-section" aria-labelledby="contact-title"> 
+                <h2 id="collab-anchor">Let’s collaborate</h2>
+                <h3>Tell me a bit about your project and how I can help. <br>Fields marked <span aria-hidden="true">*</span><span class="sr-only">required</span> are required.</h3>
+
+                <form novalidate>
+                    <!-- Spam honeypot (leave hidden) -->
+                    <div aria-hidden="true" style="position:absolute; left:-9999px;">
+                    <label for="website">Do not fill this field</label>
+                    <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+                    </div>
+
+                    <fieldset>
+                    <div class="full-name-mail-container regroup-input">
+                        <div>
+                            <label for="full-name">Full name <span aria-hidden="true">*</span></label>
+                            <input
+                            type="text"
+                            id="full-name"
+                            name="full_name"
+                            autocomplete="name"
+                            required
+                            maxlength="80"
+                            placeholder="Ada Lovelace">
+                            <div class="error-msg fullName"></div>
+                        </div>
+
+                        <div>
+                            <label for="email">Email <span aria-hidden="true">*</span></label>
+                            <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            autocomplete="email"
+                            required
+                            inputmode="email"
+                            placeholder="ada@example.com">
+                            <div class="error-msg mail"></div>
+                        </div>
+                        
+                    </div>
+                        <div>
+                            <label for="company">Company / Organization</label>
+                            <input
+                            type="text"
+                            id="company"
+                            name="company"
+                            autocomplete="organization"
+                            maxlength="100"
+                            placeholder="Analytical Engines Ltd.">
+                        </div>
+                         
+                    </fieldset>
+
+                    <fieldset >
+                    <div>
+                        <label for="project-type">Project type <span aria-hidden="true">*</span></label>
+                        <select id="project-type" name="project_type" required>
+                        <option value="" disabled selected>Select one</option>
+                        <option>Landing page</option>
+                        <option>Portfolio / Personal site</option>
+                        <option>Marketing website</option>
+                        <option>Web app (vanilla JS)</option>
+                        <option>Feature / component work</option>
+                        <option>Maintenance / refactor</option>
+                        <option>Other</option>
+                        </select>
+                    </div>
+
+                     <div>
+                        <label for="message">Tell me more about your request*</label>
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            minlength="40"
+                            maxlength="1500"
+                            rows="8"
+                            placeholder="My project is about..."></textarea>
+                    </div>
+                    <div class="error-msg message"></div>
+          
+                    <div>
+                        <label for="referral">How did you hear about me?</label>
+                        <select id="referral" name="referral">
+                        <option value="" disabled selected>Select one</option>
+                        <option>Google search</option>
+                        <option>GitHub</option>
+                        <option>LinkedIn</option>
+                        <option>Friend / colleague</option>
+                        <option>Other</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="nda" name="nda_needed">
+                        <label for="nda">An NDA is required</label>
+                    </div>
+                   
+
+                    <div>
+                        <input type="checkbox" id="consent" name="consent" required>
+                        <label for="consent">I agree to be contacted about my request. <span aria-hidden="true">*</span></label>
+                    </div>
+                    </fieldset>
+
+                    <div>
+                    <button type="submit" class="locked-btn" id="submit-btn" disabled>Request collaboration</button>
+                    <small id="privacy-note">
+                        I respect your privacy. Your information will only be used to respond to your inquiry and won’t be shared with third parties.
+                    </small>
+                    </div>
+                </form>
+                <ul class="important-links">
+                    <li><a href="https://www.linkedin.com/in/nicolas-lavarde-68999837b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://www.instagram.com/lava_rde/?hl=fr" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://github.com/ThreeFrogs511/" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+            </section>
+        </main>
+    </div>
+        
+</body>
+</html>
