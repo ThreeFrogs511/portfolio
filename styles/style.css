@@ -759,7 +759,7 @@ section:not(section:last-child) {
     }
 
     .main-content {
-        width: 90%;
+        max-width: 90%;
         margin-inline: auto;
         padding: 0;
     }
