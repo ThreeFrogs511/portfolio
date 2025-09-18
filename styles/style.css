@@ -438,8 +438,7 @@ section:not(section:last-child) {
 }
 
 .carousel-story figure {
-    width: 100%;
-    flex-shrink: 0;
+    flex: 1 0 100%;
     outline: 1px solid var(--po);
     outline-offset: -10px;
     box-sizing: border-box;
@@ -449,10 +448,10 @@ section:not(section:last-child) {
     background-color: var(--secondary);
 
     & figcaption {
-        font-family: "Caveat", cursive;
         font-optical-sizing: auto;
         font-style: normal;
-        font-size: clamp(1rem, 3vw, 1.5rem)
+        font-size: clamp(1rem, 2vw, 1.2rem);
+        margin-block: 1rem;
     }
 }
 
@@ -773,7 +772,7 @@ section:not(section:last-child) {
         width: 95%;
 
         & figure {
-            padding: 1.5rem;
+            padding: 1.5rem 1.5rem 0 1.5rem;
         }
     }
 
